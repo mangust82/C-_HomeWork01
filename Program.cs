@@ -25,14 +25,22 @@ Console.WriteLine($"max = {max}");*/
 //Задача 6: Напишите программу, которая на вход принимает число и выдаёт, 
 //является ли число чётным (делится ли оно на два без остатка).
 
-Console.WriteLine("ВВедите число");
+/*Console.WriteLine("ВВедите число");
 int a = int.Parse(Console.ReadLine());
 if ( a == 0) {
     Console.WriteLine("Это 0");
     Environment.Exit(0);}
 if ( a % 2 == 0) {Console.WriteLine("Четное");}
-else {Console.WriteLine("нечетное");}
+else {Console.WriteLine("нечетное");}*/
 
 //Задача 8: Напишите программу, которая на вход принимает число (N), 
 //а на выходе показывает все чётные числа от 1 до N.
 
+Console.WriteLine("ВВедите число N");
+int N = int.Parse(Console.ReadLine());
+int i = 1;
+
+while (i <= N ){
+    if (i % 2 == 0) {Console.Write($" {i}");}
+    i++;
+}
